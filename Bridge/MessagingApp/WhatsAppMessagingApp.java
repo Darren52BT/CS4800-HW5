@@ -2,7 +2,7 @@ package Bridge.MessagingApp;
 
 import Bridge.MessageType.Media;
 
-public class WhatsAppMessagingApp extends  MessagingApp{
+public class WhatsAppMessagingApp implements MessagingApp {
 
     @Override
     public void sendMessage(Media media) {

@@ -2,11 +2,9 @@ package Bridge.MessageType;
 
 public class Media {
     private String content;
-    private String type;
 
-    public Media(String content, String type) {
+    public Media(String content) {
         this.content = content;
-        this.type = type;
     }
 
     public String getContent() {
@@ -15,13 +13,5 @@ public class Media {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getType() {
-        return this.type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 }

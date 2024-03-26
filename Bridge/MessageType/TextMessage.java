@@ -18,16 +18,17 @@ public class TextMessage implements MessageType {
 
     @Override
     public String getMediaType() {
-        return this.content.getType();
+        return "Text";
     }
 
     @Override
     public <MediaType> MediaType getContent() {
-       return (MediaType) this.content.getContent();
+        return (MediaType) this.content.getContent();
     }
 
     @Override
     public void sendMessage() {
         this.messagingApp.sendMessage(this.content);
+        System.out.println("Text Sent");
     }
 }
